@@ -1,5 +1,5 @@
 import SignInPage from "../pageObjects/signInPage";
-
+//komentar
 describe("Testing sign in functionality", () => {
     beforeEach(() => {
       cy.fixture('testData').as('testData');
