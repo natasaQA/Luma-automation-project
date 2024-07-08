@@ -13,6 +13,9 @@ class WomenPage {
     getMsizeTop(){
       return cy.get('#option-label-size-143-item-168');
     }
+    getXSsize(){
+      return cy.get('#option-label-size-143-item-166');
+    }
     getPurpleColour(){
       return cy.get('#option-label-color-93-item-57');
     }
@@ -35,6 +38,18 @@ class WomenPage {
        }
     getOrderButton(){
       return cy.get('.payment-method-content > :nth-child(4) > div.primary > .action');
+    }
+    getBras(){
+      return cy.get('.categories-menu > :nth-child(2) > :nth-child(4) > a');
+    }
+    getPrimaBra(){
+      return cy.get(':nth-child(11) > .product-item-info > .photo > .product-image-container > .product-image-wrapper > .product-image-photo');
+    }
+    getYellowColor(){
+      return cy.get('#option-label-color-93-item-60');
+    }
+    getBlueColor(){
+      return cy.get('#option-label-color-93-item-50');
     }
 
   

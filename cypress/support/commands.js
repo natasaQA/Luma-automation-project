@@ -38,6 +38,7 @@ Cypress.Commands.add('login', (email, password)=>{
         signInPage.getEmail().type(data.email);
         signInPage.getPassword().type(data.password)
         signInPage.getSignInButton().click();
+        cy.wait(6000);
         signInPage.getLoggedInMessage().should("contain", "Welcome, Marta Miller!");
 });
 });

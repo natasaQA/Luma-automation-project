@@ -8,7 +8,7 @@ class Checkout{
         );
       }
       getNextButton(){
-        return cy.get('button[data-role="opc-continue"]');
+        return cy.get('.button')   //cy.get('button[data-role="opc-continue"]');
      }
       getOrderButton(){
         return cy.get('.payment-method-content > :nth-child(4) > div.primary > .action');
