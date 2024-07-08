@@ -17,8 +17,11 @@ class NavBar {
     getTraining(){
         return cy.get("#ui-id-7");
     }
-    getSale(){
-        return cy.get("#ui-id-8");
+    getGear(){
+        return cy.get('#ui-id-6');
+    }
+    getFitness(){
+      return cy.get('dd > .items > :nth-child(2) > a');
     }
     getBasketCounter(){
       return cy.get('.counter-number');
